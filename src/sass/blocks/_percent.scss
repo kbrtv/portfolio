@@ -1,0 +1,49 @@
+.percent{
+    margin-top: 120px;
+    &__items{
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+        grid-template-rows: repeat(2, 70px);
+        column-gap: 65px;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        position: relative;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        position: relative;
+        padding-left: 10px;
+        @include circle;
+        &:before{
+            left: -2px;
+            top: -7px;
+        }
+    }
+    &__value{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__row{
+        height: 14px;
+        background: #E8E4DE;
+        margin-top: 27px;
+        border-radius: 4px;
+        z-index: 1;
+        &_filled{
+            background: $main-color;
+            position: absolute;
+            z-index: 2;
+            height: 14px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.promo{
+    height: 100vh;
+    padding-top: 205px;
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    &__subheader{
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 11px;
+        @include circle;
+        &:before{
+            left: 0;
+        }
+        z-index: 2;
+    }
+    h1{
+        font-weight: bold;
+        font-size: 48px;
+        width: 500px;
+        line-height: 60px;
+        margin-bottom: 0;
+        margin-top: 11px;
+    }
+    &__btns{
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link{
+        font-weight: bold;
+        font-size: 14px;
+        color: #000000;
+        &:hover{
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
